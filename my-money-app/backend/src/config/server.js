@@ -1,8 +1,10 @@
-const port = 3003
+require('dotenv').config()
 
 const bodyParser = require('body-parser')
 const express = require('express')
 const server = express()
+
+const port = process.env.PORT
 
 server.use(bodyParser.urlencoded({
     extended: true
