@@ -21,7 +21,7 @@ const debtSchema = new mongoose.Schema({
     value: {
         type: String,
         min: 0,
-        required: true
+        required: [true, 'Informe o valor do débito!']
     },
     status: {
         type: String,
