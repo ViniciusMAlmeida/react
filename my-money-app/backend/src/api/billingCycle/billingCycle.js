@@ -19,7 +19,7 @@ const debtSchema = new mongoose.Schema({
         required: true
     },
     value: {
-        type: String,
+        type: Number,
         min: 0,
         required: [true, 'Informe o valor do débito!']
     },
