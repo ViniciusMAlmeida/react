@@ -7,7 +7,7 @@ BillingCycle.updateOptions({
 })
 
 BillingCycle.route('count', (req, res, next) => {
-    BillingCycle.count((error, value) => {
+    BillingCycle.countDocuments((error, value) => {
         if (error) {
             res.status(500).json({
                 erros: [error]
